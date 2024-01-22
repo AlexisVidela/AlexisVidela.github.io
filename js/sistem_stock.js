@@ -15,9 +15,9 @@ function AgregarProducto(){
     const cantProduct = Number(document.getElementById('cantProduct').value)
     if (DepurarArray(nameProduct.value,ProductStock)===-1)
     {
-        ProductObject(nameProduct.value,priceProduct,cantProduct) /*pasa el producto a objeto*/
+        ProductObject(nameProduct.value,priceProduct,cantProduct)
     }else {
-        ActualizarProduct(cantProduct, priceProduct,DepurarArray(nameProduct.value,ProductStock)) /*actualiza producto*/
+        ActualizarProduct(cantProduct, priceProduct,DepurarArray(nameProduct.value,ProductStock))
     }
     viewlist()
     document.getElementById('nameProduct').value=""
@@ -74,7 +74,7 @@ let idDelet = DepurarArray(string1.value,ProductStock)
 if (idDelet!==-1)
     {
         console.log("producto eliminado")
-        ProductStock.splice(idDelet,1)/*id a eliminar , cunatos elementos*/
+        ProductStock.splice(idDelet,1)
     }
     document.getElementById('namedelete').value=""
     viewlist()
