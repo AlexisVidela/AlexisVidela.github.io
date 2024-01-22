@@ -3,7 +3,7 @@ const headerVar = document.querySelector(".header")
 const mainVar = document.querySelector("main")
 const h1 = document.createElement("h1")
 h1.textContent = "Proyectos"
-h1.setAttribute("class","text-header text-center ")// agregar un atributo
+h1.setAttribute("class","text-header text-center ")
 headerVar.appendChild(h1)
 
 
