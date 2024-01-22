@@ -48,7 +48,6 @@ function Delete_Tarea(idtarea){
 function Check_Tarea(idtarea){
     const idArticle = document.getElementById(idtarea)
     idArticle.classList.toggle("tareacheck")
-    //idArticle.setAttribute("id","0")
     for (let i=0;i<2;i++){
         const button  = document.getElementById("button"+idtarea)
         button.remove()
