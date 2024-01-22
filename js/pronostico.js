@@ -6,10 +6,10 @@ const desp = document.getElementById('description')
 const infoTime = document.getElementById('info-time')
 const sun = document.getElementById('sun')
 function search(){
-    const namecity = document.getElementById('namecity')/*"Río Cuarto, AR"*/
+    const namecity = document.getElementById('namecity')
     const cogcity = document.getElementById('cogcity')
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${namecity.value}, ${cogcity.value},&limit=4&units=metric&lang=sp&APPID=e0fa232f8a745d1d019e16b6b1f8779c`)
-    .then(respuesta => respuesta.json())/*transforma los datos a JSON*/
+    .then(respuesta => respuesta.json())
     .then(data=>{
     console.log(data)
     timeCity.textContent="hora "+timeUnix(data.dt)
