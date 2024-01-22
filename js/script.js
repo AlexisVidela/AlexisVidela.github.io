@@ -14,7 +14,7 @@ function carrusel(num){
            }else{id=3;}
     }
     if (id==0){
-        box.style.backgroundImage = "url(../img/agenda.jpg)";
+        box.style.backgroundImage = "url(https://alexisvidela.github.io/img/agenda.jpg)";
         box.style.backgroundSize = "cover";
         box.style.backgroundPosition = "center center";
         txtbox.textContent="Agenda de tareas";
@@ -22,7 +22,7 @@ function carrusel(num){
         return;
     }
     if (id==1){
-        box.style.backgroundImage = "url(../img/calculadora.jpg)";
+        box.style.backgroundImage = "url(https://alexisvidela.github.io/img/calculadora.jpg)";
         box.style.backgroundSize = "cover";
         box.style.backgroundPosition = "center";
         txtbox.textContent="Calculadora";
@@ -30,7 +30,7 @@ function carrusel(num){
         return;
     }
     if (id==2){
-        box.style.backgroundImage = "url(../img/graficos.jpg)";
+        box.style.backgroundImage = "url(https://alexisvidela.github.io/img/graficos.jpg)";
         box.style.backgroundSize = "cover";
         box.style.backgroundPosition = "center center";
         txtbox.textContent="Sistema de Stock";
@@ -49,13 +49,13 @@ function carrusel(num){
 
 function viewweb(){
     switch(id){
-        case 0: {window.location.href = "../html/admintareas.html"}
+        case 0: {window.location.href = "https://alexisvidela.github.io/html/admintareas.html"}
         break;
-        case 1: {window.location.href = "../html/calculadora.html"}
+        case 1: {window.location.href = "https://alexisvidela.github.io/html/calculadora.html"}
         break;
-        case 2: {window.location.href = "../html/sistemadestock.html"}
+        case 2: {window.location.href = "https://alexisvidela.github.io/html/sistemadestock.html"}
         break;
-        case 3: {window.location.href = "../html/pronostico.html"}
+        case 3: {window.location.href = "https://alexisvidela.github.io/html/pronostico.html"}
         break;
     }
 }
